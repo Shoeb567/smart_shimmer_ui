@@ -56,3 +56,4 @@ class SmartShimmerCircle extends StatelessWidget {
     );
   }
 }
+

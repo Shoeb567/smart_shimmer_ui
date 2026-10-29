@@ -94,3 +94,4 @@ class SmartShimmerListView extends StatelessWidget {
     );
   }
 }
+

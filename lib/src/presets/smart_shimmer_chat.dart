@@ -126,3 +126,4 @@ class SmartShimmerChat extends StatelessWidget {
     );
   }
 }
+

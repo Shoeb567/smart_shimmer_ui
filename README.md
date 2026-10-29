@@ -3,7 +3,7 @@
 [![pub package](https://img.shields.io/pub/v/smart_shimmer_ui.svg?color=indigo)](https://pub.dev/packages/smart_shimmer_ui)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Flutter Platform](https://img.shields.io/badge/platform-flutter%20%7C%20android%20%7C%20ios%20%7C%20web%20%7C%20desktop-blue)](https://flutter.dev)
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/your-username/smart_shimmer_ui/pulls)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/Shoeb567/smart_shimmer_ui/pulls)
 
 A modern, high-performance shimmer skeleton loading UI library for Flutter. Includes ready-to-use skeleton components, realistic multi-line text, auto-adaptive dark mode, and full-screen templates.
 
@@ -243,7 +243,7 @@ SmartShimmerTheme(
 
 ## 🤝 Contributing
 
-Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/your-username/smart_shimmer_ui/issues).
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/Shoeb567/smart_shimmer_ui/issues).
 
 ---
 

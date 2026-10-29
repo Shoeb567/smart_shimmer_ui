@@ -111,3 +111,4 @@ class SmartShimmerTheme extends InheritedWidget {
   @override
   bool updateShouldNotify(SmartShimmerTheme oldWidget) => data != oldWidget.data;
 }
+

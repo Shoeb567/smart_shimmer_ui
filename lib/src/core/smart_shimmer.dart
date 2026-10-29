@@ -240,3 +240,4 @@ class _MatrixTransform extends GradientTransform {
   @override
   Matrix4? transform(Rect bounds, {TextDirection? textDirection}) => matrix;
 }
+

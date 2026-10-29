@@ -348,3 +348,4 @@ class _FeatureRow extends StatelessWidget {
     );
   }
 }
+

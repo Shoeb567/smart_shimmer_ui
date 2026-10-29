@@ -112,3 +112,4 @@ class SmartShimmerText extends StatelessWidget {
     );
   }
 }
+

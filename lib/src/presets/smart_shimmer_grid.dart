@@ -96,3 +96,4 @@ class SmartShimmerGrid extends StatelessWidget {
     );
   }
 }
+

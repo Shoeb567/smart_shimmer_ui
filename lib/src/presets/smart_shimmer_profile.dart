@@ -193,3 +193,4 @@ class SmartShimmerProfile extends StatelessWidget {
     );
   }
 }
+

@@ -156,3 +156,4 @@ class SmartShimmerFeed extends StatelessWidget {
     );
   }
 }
+

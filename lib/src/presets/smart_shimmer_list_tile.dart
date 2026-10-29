@@ -149,3 +149,4 @@ class SmartShimmerListTile extends StatelessWidget {
     );
   }
 }
+

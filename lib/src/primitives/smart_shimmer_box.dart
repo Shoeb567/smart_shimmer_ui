@@ -89,3 +89,4 @@ class SmartShimmerBox extends StatelessWidget {
     );
   }
 }
+

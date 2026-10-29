@@ -59,3 +59,4 @@ class SmartShimmerBuilder extends StatelessWidget {
     );
   }
 }
+

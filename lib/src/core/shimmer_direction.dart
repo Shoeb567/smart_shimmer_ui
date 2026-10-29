@@ -12,3 +12,4 @@ enum ShimmerDirection {
   /// Shimmer sweeps from bottom to top.
   bottomToTop,
 }
+

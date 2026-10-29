@@ -77,3 +77,4 @@ class SmartShimmerImage extends StatelessWidget {
     return imageBox;
   }
 }
+
