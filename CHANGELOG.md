@@ -1,3 +1,9 @@
+## 1.0.1
+
+* 📸 Added high-resolution screenshots and visual demonstrations for List, Cards, Feed, Profile, and Dark Mode presets.
+* 🌓 Enhanced Auto-Adaptive Dark Mode contrast.
+* ⚡ Broadened compatibility across all modern Flutter and Dart SDK versions.
+
 ## 1.0.0
 
 * 🎉 Initial production release of `smart_shimmer_ui`.
