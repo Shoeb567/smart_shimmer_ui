@@ -1,3 +1,4 @@
+
 name: smart_shimmer_ui
 description: A modern, high-performance shimmer skeleton loading UI library for Flutter with ready-made presets, dark mode support, and customizable animations.
 version: 1.0.0
@@ -30,9 +31,11 @@ screenshots:
     path: screenshots/list_shimmer.png
   - description: 'Ready-made Vertical and Horizontal Cards with E-Commerce Grid.'
     path: screenshots/cards_grid_shimmer.png
+  - description: 'Cards and E-Commerce Grid Skeletons in Dark Mode.'
+    path: screenshots/cards_grid_dark.jpg
   - description: 'Social Media Feed shimmer skeleton.'
     path: screenshots/feed_shimmer.png
   - description: 'Complete User Profile screen skeleton in Light Mode.'
     path: screenshots/profile_light_shimmer.png
-  - description: 'Auto-adaptive Dark Mode shimmer skeleton.'
+  - description: 'Auto-adaptive Profile Shimmer in Dark Mode.'
     path: screenshots/dark_mode_shimmer.png

@@ -28,9 +28,9 @@ Most shimmer packages require you to build complex skeleton layouts manually usi
 | :---: | :---: | :---: |
 | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/list_shimmer.png" width="240" alt="Classic Shimmer List" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/cards_grid_shimmer.png" width="240" alt="Cards and Grid" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/feed_shimmer.png" width="240" alt="Social Feed" /> |
 
-| Profile Screen (Light Mode) | Auto Dark Mode Contrast |
-| :---: | :---: |
-| <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/profile_light_shimmer.png" width="240" alt="Profile Light" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/dark_mode_shimmer.png" width="240" alt="Dark Mode Contrast" /> |
+| Profile Screen (Light) | Profile Screen (Dark) | Cards & Grid (Dark) |
+| :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/profile_light_shimmer.png" width="240" alt="Profile Light" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/dark_mode_shimmer.png" width="240" alt="Profile Dark" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/cards_grid_dark.jpg" width="240" alt="Cards and Grid Dark" /> |
 
 ---
 
