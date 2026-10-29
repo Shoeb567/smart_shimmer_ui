@@ -128,7 +128,7 @@ class SmartShimmerListTile extends StatelessWidget {
             SmartShimmerBox(
               width: trailingWidth,
               height: trailingHeight,
-              borderRadius: BorderRadius.circular(6.0),
+              borderRadius: const BorderRadius.all(Radius.circular(6.0)),
               wrapShimmer: false,
             ),
           ],

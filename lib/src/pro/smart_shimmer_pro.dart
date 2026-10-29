@@ -97,14 +97,14 @@ class SmartShimmerProBanner extends StatelessWidget {
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
-            accentColor.withValues(alpha: 0.12),
-            accentColor.withValues(alpha: 0.04),
+            accentColor.withOpacity(0.12),
+            accentColor.withOpacity(0.04),
           ],
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
         ),
         borderRadius: BorderRadius.circular(16.0),
-        border: Border.all(color: accentColor.withValues(alpha: 0.3), width: 1.5),
+        border: Border.all(color: accentColor.withOpacity(0.3), width: 1.5),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -226,7 +226,7 @@ class _ProCatalogSheet extends StatelessWidget {
               Container(
                 padding: const EdgeInsets.all(8),
                 decoration: BoxDecoration(
-                  color: accentColor.withValues(alpha: 0.15),
+                  color: accentColor.withOpacity(0.15),
                   shape: BoxShape.circle,
                 ),
                 child: Icon(Icons.workspace_premium_rounded,

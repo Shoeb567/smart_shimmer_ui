@@ -151,7 +151,7 @@ class SmartShimmerProfile extends StatelessWidget {
 
                 // Tab bar indicator
                 Row(
-                  children: [
+                  children: const [
                     Expanded(
                       child: Center(
                         child: SmartShimmerBox(

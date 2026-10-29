@@ -241,7 +241,7 @@ class SmartShimmerCard extends StatelessWidget {
           SmartShimmerBox(
             width: imageWidth,
             height: imageHeight,
-            borderRadius: BorderRadius.circular(10.0),
+            borderRadius: const BorderRadius.all(Radius.circular(10.0)),
             wrapShimmer: false,
           ),
           const SizedBox(width: 12),
