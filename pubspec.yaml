@@ -24,3 +24,15 @@ topics:
   - loading-animation
   - ui-components
   - placeholders
+
+screenshots:
+  - description: 'Classic Skeleton Loading List with avatar and shimmer wave.'
+    path: screenshots/list_shimmer.png
+  - description: 'Ready-made Vertical and Horizontal Cards with E-Commerce Grid.'
+    path: screenshots/cards_grid_shimmer.png
+  - description: 'Social Media Feed shimmer skeleton.'
+    path: screenshots/feed_shimmer.png
+  - description: 'Complete User Profile screen skeleton in Light Mode.'
+    path: screenshots/profile_light_shimmer.png
+  - description: 'Auto-adaptive Dark Mode shimmer skeleton.'
+    path: screenshots/dark_mode_shimmer.png

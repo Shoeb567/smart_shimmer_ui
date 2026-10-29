@@ -22,30 +22,15 @@ Most shimmer packages require you to build complex skeleton layouts manually usi
 
 ---
 
-## 📱 Screenshots & Visual Demos
+## 📱 Screenshots & Pre-built Widgets
 
-```
-┌────────────────────────────────────────────────────────┐
-│             Skeleton Loading with shimmer              │
-├────────────────────────────────────────────────────────┤
-│  (●)  ████████████████████████████                     │
-│       ██████████████                                   │
-│                                                        │
-│  (●)  ████████████████████████████                     │
-│       ██████████████                                   │
-│                                                        │
-│  (●)  ████████████████████████████                     │
-│       ██████████████                                   │
-│                                                        │
-│  (●)  ████████████████████████████                     │
-│       ██████████████                                   │
-│                                                        │
-│  (●)  ████████████████████████████                     │
-│       ██████████████                                   │
-└────────────────────────────────────────────────────────┘
-```
+| Classic Shimmer List | Cards & Product Grid | Social Media Feed |
+| :---: | :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/list_shimmer.png" width="240" alt="Classic Shimmer List" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/cards_grid_shimmer.png" width="240" alt="Cards and Grid" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/feed_shimmer.png" width="240" alt="Social Feed" /> |
 
-> **Note:** To preview animated GIF demos and interactive examples, run the included `example` app or visit the GitHub repository.
+| Profile Screen (Light Mode) | Auto Dark Mode Contrast |
+| :---: | :---: |
+| <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/profile_light_shimmer.png" width="240" alt="Profile Light" /> | <img src="https://raw.githubusercontent.com/Shoeb567/smart_shimmer_ui/main/screenshots/dark_mode_shimmer.png" width="240" alt="Dark Mode Contrast" /> |
 
 ---
 

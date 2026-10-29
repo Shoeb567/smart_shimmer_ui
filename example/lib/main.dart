@@ -163,21 +163,21 @@ class _DemoHomeScreenState extends State<DemoHomeScreen> {
           child: Row(
             children: [
               Text(
-                'Demonstrating SmartShimmerListView',
+                'SmartShimmer ListView',
                 style: TextStyle(
                   fontSize: 13,
                   color: Colors.grey.shade600,
                   fontWeight: FontWeight.w500,
                 ),
               ),
-              const Spacer(),
-              Text(
-                'Tap FAB to toggle state',
-                style: TextStyle(
-                  fontSize: 11,
-                  color: Colors.indigo.shade400,
-                ),
-              ),
+              // const Spacer(),
+              // Text(
+              //   'Tap FAB to toggle state',
+              //   style: TextStyle(
+              //     fontSize: 11,
+              //     color: Colors.indigo.shade400,
+              //   ),
+              // ),
             ],
           ),
         ),

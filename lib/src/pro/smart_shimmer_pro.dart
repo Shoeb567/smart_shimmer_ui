@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 
 /// Information about an available Pro Shimmer UI template kit.
