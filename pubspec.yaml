@@ -1,7 +1,7 @@
 
 name: smart_shimmer_ui
 description: A modern, high-performance shimmer skeleton loading UI library for Flutter with ready-made presets, dark mode support, and customizable animations.
-version: 1.0.1
+version: 1.0.2
 homepage: https://github.com/Shoeb567/smart_shimmer_ui
 repository: https://github.com/Shoeb567/smart_shimmer_ui
 issue_tracker: https://github.com/Shoeb567/smart_shimmer_ui/issues

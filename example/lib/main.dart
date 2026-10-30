@@ -65,6 +65,7 @@ class DemoHomeScreen extends StatefulWidget {
 class _DemoHomeScreenState extends State<DemoHomeScreen> {
   int _currentTabIndex = 0;
   bool _isLoadingContent = true;
+  int _selectedProCategory = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -263,7 +264,71 @@ class _DemoHomeScreenState extends State<DemoHomeScreen> {
       padding: const EdgeInsets.symmetric(vertical: 12),
       children: [
         const SmartShimmerProBanner(),
-        const SizedBox(height: 16),
+        const SizedBox(height: 20),
+
+        // Section Title: Live Shimmer Previews
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Row(
+            children: [
+              const Icon(Icons.remove_red_eye_rounded,
+                  color: Color(0xFF6366F1), size: 20),
+              const SizedBox(width: 8),
+              const Text(
+                'Live Pro Template Previews',
+                style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+              ),
+              const Spacer(),
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                decoration: BoxDecoration(
+                  color: const Color(0xFF6366F1).withOpacity(0.12),
+                  borderRadius: BorderRadius.circular(12),
+                ),
+                child: const Text(
+                  'Interactive',
+                  style: TextStyle(
+                    fontSize: 11,
+                    fontWeight: FontWeight.bold,
+                    color: Color(0xFF6366F1),
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
+        const SizedBox(height: 6),
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 20),
+          child: Text(
+            'Explore production-grade shimmer skeletons below. Full source code & Figma assets unlocked with Pro.',
+            style: TextStyle(fontSize: 12, color: Colors.grey.shade600),
+          ),
+        ),
+        const SizedBox(height: 14),
+
+        // Category Filter Chips
+        SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Row(
+            children: [
+              _buildCategoryChip(0, '🏦 Fintech & Cards'),
+              const SizedBox(width: 8),
+              _buildCategoryChip(1, '🛍️ E-Commerce'),
+              const SizedBox(width: 8),
+              _buildCategoryChip(2, '🍔 Food Delivery'),
+              const SizedBox(width: 8),
+              _buildCategoryChip(3, '🎬 Social & Video'),
+            ],
+          ),
+        ),
+        const SizedBox(height: 10),
+
+        // Active Live Preview Card with Pro Lock
+        _buildActiveProPreview(),
+
+        const SizedBox(height: 24),
         const Padding(
           padding: EdgeInsets.symmetric(horizontal: 20),
           child: Text(
@@ -273,8 +338,125 @@ class _DemoHomeScreenState extends State<DemoHomeScreen> {
         ),
         const SizedBox(height: 8),
         _buildComparisonTable(),
+        const SizedBox(height: 24),
+
+        // Settlement & Payout Info Card
+        Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 16),
+          child: Container(
+            padding: const EdgeInsets.all(16),
+            decoration: BoxDecoration(
+              color: Theme.of(context).cardColor,
+              borderRadius: BorderRadius.circular(16),
+              border: Border.all(
+                color: Theme.of(context).dividerColor.withOpacity(0.2),
+              ),
+            ),
+            child: Row(
+              children: [
+                Container(
+                  padding: const EdgeInsets.all(10),
+                  decoration: BoxDecoration(
+                    color: Colors.green.withOpacity(0.12),
+                    shape: BoxShape.circle,
+                  ),
+                  child: const Icon(
+                    Icons.account_balance_rounded,
+                    color: Colors.green,
+                    size: 22,
+                  ),
+                ),
+                const SizedBox(width: 14),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      const Text(
+                        'Instant Payout Settlement',
+                        style: TextStyle(
+                          fontSize: 13,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                      const SizedBox(height: 3),
+                      Text(
+                        'Direct deposit to your Indian bank via Gumroad / LemonSqueezy / Stripe.',
+                        style: TextStyle(
+                          fontSize: 11,
+                          color: Colors.grey.shade600,
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: 40),
       ],
     );
+  }
+
+  Widget _buildCategoryChip(int index, String label) {
+    final isSelected = _selectedProCategory == index;
+
+    return FilterChip(
+      selected: isSelected,
+      label: Text(label),
+      labelStyle: TextStyle(
+        fontSize: 12,
+        fontWeight: isSelected ? FontWeight.bold : FontWeight.w500,
+        color: isSelected ? Colors.white : null,
+      ),
+      backgroundColor: Theme.of(context).cardColor,
+      selectedColor: const Color(0xFF6366F1),
+      showCheckmark: false,
+      shape: RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(12),
+        side: BorderSide(
+          color: isSelected
+              ? const Color(0xFF6366F1)
+              : Theme.of(context).dividerColor.withOpacity(0.2),
+        ),
+      ),
+      onSelected: (_) => setState(() => _selectedProCategory = index),
+    );
+  }
+
+  Widget _buildActiveProPreview() {
+    switch (_selectedProCategory) {
+      case 0:
+        return const SmartShimmerProPreviewCard(
+          title: 'Fintech & Banking Suite',
+          subtitle: 'Card • Wallet • Weekly Bar Chart • Transactions',
+          child: SmartShimmerFintechPreview(),
+        );
+      case 1:
+        return const SmartShimmerProPreviewCard(
+          title: 'E-Commerce Product Detail',
+          subtitle: 'Gallery • Ratings • Swatches • Sticky Buy Bar',
+          child: SmartShimmerEcommercePreview(),
+        );
+      case 2:
+        return const SmartShimmerProPreviewCard(
+          title: 'Food Delivery & Restaurants',
+          subtitle: 'Location • Category Pills • Restaurant Banner • Menu',
+          child: SmartShimmerFoodDeliveryPreview(),
+        );
+      case 3:
+        return const SmartShimmerProPreviewCard(
+          title: 'Social & Media Streaming',
+          subtitle: 'Story Trays • Video Player • Floating Actions',
+          child: SmartShimmerVideoPreview(),
+        );
+      default:
+        return const SmartShimmerProPreviewCard(
+          title: 'Fintech & Banking Suite',
+          subtitle: 'Card • Wallet • Bar Chart • Transactions',
+          child: SmartShimmerFintechPreview(),
+        );
+    }
   }
 
   Widget _buildComparisonTable() {

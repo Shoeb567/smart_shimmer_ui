@@ -1,3 +1,14 @@
+## 1.0.2
+
+* 💎 Added interactive, live-animated Pro Shimmer templates:
+  * `SmartShimmerFintechPreview` - Holographic credit card, wallet balance, spending analytics bar chart, and recent transactions.
+  * `SmartShimmerEcommercePreview` - Product gallery banner, ratings, color swatches, and sticky bottom buy bar.
+  * `SmartShimmerFoodDeliveryPreview` - Location selector, food categories, restaurant hero banner with delivery ETA.
+  * `SmartShimmerVideoPreview` - Story avatars tray, 9:16 reels player placeholder, and floating reaction buttons.
+* 🛡️ Introduced `SmartShimmerProPreviewCard` with sleek glassmorphic PRO badge and bottom unlock CTA.
+* 💳 Added high-converting `showSmartShimmerProModal` with Single Dev ($19) and Team ($49) licensing options.
+* 💰 Added comprehensive Payment Settlement & Direct Bank Deposit guide (`PRO_MONETIZATION_GUIDE.md`).
+
 ## 1.0.1
 
 * 📸 Added high-resolution screenshots and visual demonstrations for List, Cards, Feed, Profile, and Dark Mode presets.

@@ -40,7 +40,7 @@ Add `smart_shimmer_ui` to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  smart_shimmer_ui: ^1.0.1
+  smart_shimmer_ui: ^1.0.2
 ```
 
 Then run:

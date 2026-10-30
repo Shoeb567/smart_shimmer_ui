@@ -187,12 +187,14 @@ void main() {
       await tester.pumpWidget(
         const MaterialApp(
           home: Scaffold(
-            body: Column(
-              children: [
-                SmartShimmerCard(),
-                SmartShimmerCard.horizontal(),
-                SmartShimmerCard.compact(),
-              ],
+            body: SingleChildScrollView(
+              child: Column(
+                children: [
+                  SmartShimmerCard(),
+                  SmartShimmerCard.horizontal(),
+                  SmartShimmerCard.compact(),
+                ],
+              ),
             ),
           ),
         ),
@@ -290,6 +292,56 @@ void main() {
 
       expect(find.text('Loaded Data!'), findsOneWidget);
       expect(find.text('Skeleton Loading...'), findsNothing);
+    });
+  });
+
+  group('SmartShimmer Pro Preview Tests', () {
+    testWidgets('SmartShimmerFintechPreview renders correctly', (tester) async {
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: SingleChildScrollView(
+              child: SmartShimmerFintechPreview(),
+            ),
+          ),
+        ),
+      );
+
+      expect(find.byType(SmartShimmerFintechPreview), findsOneWidget);
+    });
+
+    testWidgets('SmartShimmerEcommercePreview renders correctly',
+        (tester) async {
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: SingleChildScrollView(
+              child: SmartShimmerEcommercePreview(),
+            ),
+          ),
+        ),
+      );
+
+      expect(find.byType(SmartShimmerEcommercePreview), findsOneWidget);
+    });
+
+    testWidgets('SmartShimmerProPreviewCard renders with pro badge',
+        (tester) async {
+      await tester.pumpWidget(
+        const MaterialApp(
+          home: Scaffold(
+            body: SmartShimmerProPreviewCard(
+              title: 'Test Pro Template',
+              subtitle: 'Subtitle info',
+              child: SizedBox(height: 50),
+            ),
+          ),
+        ),
+      );
+
+      expect(find.text('PRO TEMPLATE'), findsOneWidget);
+      expect(find.text('Test Pro Template'), findsOneWidget);
+      expect(find.text('Unlock'), findsOneWidget);
     });
   });
 }

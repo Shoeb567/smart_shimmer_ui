@@ -23,3 +23,4 @@ export 'src/presets/smart_shimmer_feed.dart';
 
 // Pro & Monetization
 export 'src/pro/smart_shimmer_pro.dart';
+export 'src/pro/smart_shimmer_pro_templates.dart';
