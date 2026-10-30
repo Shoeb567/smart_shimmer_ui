@@ -1,0 +1,6 @@
+smart_shimmer_pro_kit.zip
+smart_shimmer_pro_kit/
+build/
+.dart_tool/
+*.iml
+.idea/

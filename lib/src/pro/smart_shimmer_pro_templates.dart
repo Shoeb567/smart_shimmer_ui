@@ -511,13 +511,13 @@ class SmartShimmerVideoPreview extends StatelessWidget {
               ),
             ),
             // Floating Bottom Captions
-            Positioned(
+            const Positioned(
               left: 14,
               bottom: 16,
               right: 60,
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
-                children: const [
+                children: [
                   SmartShimmerBox(width: 120, height: 14),
                   SizedBox(height: 6),
                   SmartShimmerText(lines: 2, lastLineWidthFactor: 0.5),
