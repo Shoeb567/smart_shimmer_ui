@@ -195,7 +195,7 @@ SmartShimmerTheme(
 | **Figma UI Kit & Design Tokens** | ❌ | ✅ |
 | **Priority Source-Code Access & Updates** | ❌ | ✅ |
 
-👉 [**Explore Smart Shimmer PRO Templates & Source Code**](https://your-gumroad-or-lemonsqueezy-link.com)
+👉 [**Explore Smart Shimmer PRO Templates & Source Code ($19)**](https://shoebster43.gumroad.com/l/hpsvs)
 
 *(See `PRO_MONETIZATION_GUIDE.md` for creator revenue instructions)*
 

@@ -65,7 +65,7 @@
 ### પગલું 2: પેકેજમાં લિંક અપડેટ કરો
 `lib/src/pro/smart_shimmer_pro.dart` ફાઈલમાં જઈને માત્ર આ એક લાઈનમાં તમારી લિંક મૂકી દો:
 ```dart
-static String checkoutUrl = 'https://gumroad.com/l/તમારી-પ્રોડક્ટ-લિંક';
+static String checkoutUrl = 'https://shoebster43.gumroad.com/l/hpsvs';
 ```
 
 ---

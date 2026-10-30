@@ -31,7 +31,7 @@ class SmartShimmerProTemplate {
 /// Catalog of premium Pro templates available in the Smart Shimmer Pro Kit.
 class SmartShimmerProCatalog {
   /// Configuration for checkout URL (e.g. Gumroad or LemonSqueezy).
-  static String checkoutUrl = 'https://gumroad.com/l/smart-shimmer-pro';
+  static String checkoutUrl = 'https://shoebster43.gumroad.com/l/hpsvs';
 
   /// List of production-ready Pro template kits.
   static final List<SmartShimmerProTemplate> templates = [

@@ -91,3 +91,4 @@ class SmartShimmer50ScreensRegistry {
     SmartShimmerScreenItem(id: 50, title: 'Settings, Profile & Account', category: 'Settings', builder: (_) => const ProAccountSettingsScreen()),
   ];
 }
+
