@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:url_launcher/url_launcher.dart';
 import 'smart_shimmer_pro_templates.dart';
 
 /// Information about an available Pro Shimmer UI template kit.
@@ -26,6 +27,17 @@ class SmartShimmerProTemplate {
     required this.tags,
     this.previewBuilder,
   });
+}
+
+/// Directly opens the Smart Shimmer Pro checkout page in the browser.
+Future<bool> launchSmartShimmerProCheckout([String? url]) async {
+  final target = url ?? SmartShimmerProCatalog.checkoutUrl;
+  final uri = Uri.parse(target);
+  try {
+    return await launchUrl(uri, mode: LaunchMode.externalApplication);
+  } catch (_) {
+    return await launchUrl(uri);
+  }
 }
 
 /// Catalog of premium Pro templates available in the Smart Shimmer Pro Kit.
@@ -547,17 +559,29 @@ class _ProCatalogSheetState extends State<_ProCatalogSheet> {
           SizedBox(
             width: double.infinity,
             child: ElevatedButton.icon(
-              onPressed: () {
+              onPressed: () async {
                 Navigator.pop(context);
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(
-                    backgroundColor: widget.accentColor,
-                    content: Text(
-                      'To complete purchase, open your Gumroad/LemonSqueezy link:\n${SmartShimmerProCatalog.checkoutUrl}',
-                    ),
-                    duration: const Duration(seconds: 4),
-                  ),
-                );
+                final uri = Uri.parse(SmartShimmerProCatalog.checkoutUrl);
+                try {
+                  final launched = await launchUrl(
+                    uri,
+                    mode: LaunchMode.externalApplication,
+                  );
+                  if (!launched && context.mounted) {
+                    await launchUrl(uri);
+                  }
+                } catch (e) {
+                  if (context.mounted) {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      SnackBar(
+                        backgroundColor: widget.accentColor,
+                        content: Text(
+                          'Checkout URL: ${SmartShimmerProCatalog.checkoutUrl}',
+                        ),
+                      ),
+                    );
+                  }
+                }
               },
               style: ElevatedButton.styleFrom(
                 backgroundColor: widget.accentColor,
@@ -568,11 +592,11 @@ class _ProCatalogSheetState extends State<_ProCatalogSheet> {
                 ),
                 elevation: 0,
               ),
-              icon: const Icon(Icons.shopping_bag_rounded, size: 20),
+              icon: const Icon(Icons.open_in_new_rounded, size: 20),
               label: Text(
                 _selectedTier == 0
-                    ? 'Unlock Single License (\$19 / ₹1,500)'
-                    : 'Unlock Team License (\$49 / ₹3,999)',
+                    ? 'Buy Single License (\$19 / ₹1,500) ➔'
+                    : 'Buy Team License (\$49 / ₹3,999) ➔',
                 style: const TextStyle(
                   fontSize: 15,
                   fontWeight: FontWeight.bold,
